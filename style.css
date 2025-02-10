@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, lightpink, lavender);
+}
+
+main {
+    border-radius: 10px;
+    border: thin solid black;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.705);
+    margin: auto;
+    box-shadow: 5px 5px 5px gray;
+    min-width: 60%; 
+    min-height: 60%; 
+    text-wrap: wrap;
+    max-width: 500px;
+}
+
+.task-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+/* .container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#new-task {
+    border-radius: 10px;
+    border: thin solid black;
+    padding: 0.5em;
+    background-color: white;
+    width: 80%;
+    justify-self: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+#new-task:hover {
+    box-shadow: 2px 2px 2px pink;
+}
+
+#add-text {
+    border: none;
+    width: 60%;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+#add-button {
+    border-radius: 10px;
+    border: thin solid black;
+    padding: 0.5em;
+    width: 80px;
+    align-self: right;
+}
+
+#add-button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px pink;
+}
+
+.tasks-to-do {
+    padding: 0.7em;
+    text-align: left;
+    border-bottom: thin solid gray;
+}
+
+input:checked+label {
+    color: lightgray;
+    text-decoration: line-through;
+}
